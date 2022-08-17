@@ -28,6 +28,7 @@ class WhereByRequest extends FormRequest
             "roomNamePrefix"    => 'nullable|string|max:39',
             "roomNamePattern"   => 'required|string|in:human-short,uuid',
             "roomMode"  => 'required|string|in:group,normal',
+            "startDate"   => 'nullable|date',
             "endDate"   => 'required|date',
             "fields"    => 'nullable|array'
         ];
