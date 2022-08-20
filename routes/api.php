@@ -23,6 +23,11 @@ Route::controller(\App\Http\Controllers\Api\V1\Meeting\MeetingController::class)
     Route::delete('meetings/{meetingId}','deleteMeeting');
 });
 
+Route::controller(\App\Http\Controllers\Api\V1\Room\RoomController::class)->group(function (){
+    Route::get('rooms','getRooms');
+    Route::post('tokens','createToken');
+});
+
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });

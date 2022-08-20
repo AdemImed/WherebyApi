@@ -37,4 +37,10 @@ return [
         'api_base_url' => env('WHEREBY_API_URL'),
     ],
 
+    'daily' => [
+        'key' => env('DAILY_API_KEY'),
+        'key_type' => env('DAILY_KEY_TYPE'),
+        'api_base_url' => env('DAILY_API_URL'),
+    ],
+
 ];
