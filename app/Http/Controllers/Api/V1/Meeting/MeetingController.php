@@ -5,8 +5,6 @@ namespace App\Http\Controllers\Api\V1\Meeting;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\WhereByRequest;
 use App\Services\WhereByService;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Http;
 
 class MeetingController extends Controller
 {
